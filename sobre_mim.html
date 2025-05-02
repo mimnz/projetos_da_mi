@@ -17,11 +17,57 @@
     <div class="container">
     <div class="menu">
         <ul>
-            <li><a href="principal.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="sobre_mim.html">Sobre mim</a></li>
             <li><a href="projetos.html">Projetos</a></li>
-            
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4wEm7g5fLxVeE9GPTLlBN8?utm_source=generator&theme=0" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <h3 id="menu_texto">Músicas</h3>
+            <div class="spotify-carousel">
+
+                <!-- Botões ocultos para controle -->
+                <input type="radio" name="player" id="player1" checked>
+                <input type="radio" name="player" id="player2">
+                <input type="radio" name="player" id="player3">
+                <input type="radio" name="player" id="player4">
+                <input type="radio" name="player" id="player5">
+              
+                <!-- Área dos players -->
+                <div class="players">
+                  <div class="item player1">
+                    <iframe src="https://open.spotify.com/embed/playlist/4wEm7g5fLxVeE9GPTLlBN8?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                  <div class="item player2">
+                    <iframe src="https://open.spotify.com/embed/album/6jWde94ln40epKIQCd8XUh?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                  <div class="item player3">
+                    <iframe src="https://open.spotify.com/embed/album/3sSfjX4fhZonjyZ10x0l0f?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                  <div class="item player4">
+                    <iframe src="https://open.spotify.com/embed/album/4AdGr92Z6Ff2WbKP5Ja2QC?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                  <div class="item player5">
+                    <iframe src="https://open.spotify.com/embed/album/22PP61GmfGKAhIQo2ZSRxG?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                </div>
+              
+                <!-- Navegação com labels -->
+                <div class="nav-buttons">
+                  <label for="player5">◀</label>
+                  <label for="player2">▶</label>
+              
+                  <label for="player1">◀</label>
+                  <label for="player3">▶</label>
+              
+                  <label for="player2">◀</label>
+                  <label for="player4">▶</label>
+              
+                  <label for="player3">◀</label>
+                  <label for="player5">▶</label>
+              
+                  <label for="player4">◀</label>
+                  <label for="player1">▶</label>
+                </div>
+              </div>
 
         </ul>
     </div>
@@ -32,12 +78,11 @@
             <img src="morcego.webp" alt="Morceguinho" class="logo">
         </div>
         <ul id="texto">
-            <li>Me chamo Milena Lacerda Muniz;</li>
-            <li>Tenho 15 anos;</li>
-            <li>Nasci dia 5 de agosto de 2009;</li>
+            <li>Me chamo Milena Lacerda Muniz, mas meu apelido é Mi!🖤</li>
+            <li>Tenho 15 anos, nasci dia 5 de agosto de 2009!</li>
+            <li>Sou de Foz do Iguaçu - Paraná, Brasil 🇧🇷</li>
+            <li>Gosto de estudar, jogar, assistir filmes, malhar na academia, e também tenho paixão por arte, música e psicologia 🎓🎧🎶📚</li>
         </ul>
-</div>
-
-
+    </div>
 </body>
 </html>
