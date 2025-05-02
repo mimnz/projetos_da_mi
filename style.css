@@ -31,8 +31,14 @@ body {
     font-size: 27px;
     margin-top: -65px;
     margin-left: 40px;
-    
+  }
 
+  #menu_texto {
+    font-family: "Meow Script", "cursive";
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.705)
   }
   
   .caixa {
@@ -102,7 +108,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 200px;
+  width: 352px;
   height: 100vh;
 }
 
@@ -137,4 +143,62 @@ background-color: white;
 
 .texto a:hover {
   size: 25px;  
+  }
+
+  .spotify-carousel input {
+    display: none;
+  }
+  
+  .players .item {
+    display: none;
+    margin-top: -20px;
+  }
+  
+  input#player1:checked ~ .players .player1,
+  input#player2:checked ~ .players .player2,
+  input#player3:checked ~ .players .player3,
+  input#player4:checked ~ .players .player4,
+  input#player5:checked ~ .players .player5 {
+    display: block;
+  }
+  
+  .nav-buttons {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    size: 15px;
+  }
+
+  .nav-buttons label {
+    display: none;   
+    transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    margin: 0 10px;
+    font-size: 31px;
+    cursor: pointer;
+  }  
+
+  .nav-buttons label:hover{
+    color: white;  
+    transition: background-color 0.4s ease, color 0.4s ease;
+    transform: scale(1.4);
+  }
+  
+  
+  input#player1:checked ~ .nav-buttons label:nth-child(1),
+  input#player1:checked ~ .nav-buttons label:nth-child(2),
+  input#player2:checked ~ .nav-buttons label:nth-child(3),
+  input#player2:checked ~ .nav-buttons label:nth-child(4),
+  input#player3:checked ~ .nav-buttons label:nth-child(5),
+  input#player3:checked ~ .nav-buttons label:nth-child(6),
+  input#player4:checked ~ .nav-buttons label:nth-child(7),
+  input#player4:checked ~ .nav-buttons label:nth-child(8),
+  input#player5:checked ~ .nav-buttons label:nth-child(9),
+  input#player5:checked ~ .nav-buttons label:nth-child(10) {
+    display: inline-block;
+  }
+  
+  .ifpr {
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
   }
