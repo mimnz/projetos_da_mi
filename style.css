@@ -31,6 +31,7 @@ body {
     font-size: 27px;
     margin-top: -65px;
     margin-left: 40px;
+    
   }
 
   #menu_texto {
@@ -201,4 +202,12 @@ background-color: white;
     float: right;
     margin-top: -50px;
     margin-right: 20px;
+  }
+
+  .eu {
+    float: left;
+    margin-top: -10px; 
+    margin-right: 40px;
+    border-radius: 200px;
+    opacity: 65%;
   }
