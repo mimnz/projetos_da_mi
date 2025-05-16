@@ -22,9 +22,10 @@ header {
 background-color: #fea6a2;
 color: #252326;
 font-family: "Meow Script", "cursive";
-font-size: 120px;
+font-size: 80px;
 text-align: left;
 padding: 10px 0;
+height: 100px;
 }
 .sidebar {
 background-color: #252326;
@@ -33,13 +34,20 @@ font-family:"Sour Gummy", sans-serif;
 font-size: 27px;
 padding: 15px;
 box-sizing: border-box;
+width: 25%;
+height: calc(100vh-100px-50px);
+float: left;
 }
 .main-content {
 background-color: #f1f1f1;
 color: #d33649;
 font-family:"Sour Gummy", sans-serif;
 font-size: 27px;
+box-sizing: border-box;
 padding: 15px;
+width: 75%;
+min-height: calc(100vh-100px-50px);
+float: left;
 }
 footer {
 background-color: #fea6a2;
@@ -48,7 +56,8 @@ font-family:"Sour Gummy", sans-serif;
 font-size: 27px;
 text-align: center;
 padding: 15px 0;
-height: 50px;
+min-height: calc(100vh-100px-50px);
+float: left;
 }
 
 </style>
