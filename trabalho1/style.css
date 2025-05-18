@@ -125,4 +125,70 @@ section p img {
   gap: 20px;
   margin-bottom: 30px;
   }
-  
+
+  /* Estilo para tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #aee637;
+  padding: 10px;
+  text-align: left;
+  color: #383939;
+}
+
+table thead {
+  background-color: #38c958;
+  color: white;
+}
+
+/* Estilo para figure e figcaption */
+figure {
+  margin-top: 20px;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border: 4px solid #149c68;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
+}
+
+/* Estilo para seções com fragmentos */
+#missoes {
+  scroll-margin-top: 80px; /* melhora navegação ao clicar no link */
+}
+
+/* Estilo para <abbr> */
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+  color: #149c68;
+}
+
+/* Estilo específico para o link de retorno */
+a.voltar {
+  display: inline-block;
+  margin-top: 30px;
+  color: #149c68;
+  font-weight: 700;
+  border-left: 4px solid #aee637;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+
+a.voltar:hover {
+  color: #38c958;
+}
+
