@@ -46,17 +46,19 @@ html, body {
   }
   
   .caixa {
-    background-color: rgba(233, 230, 240, 0.821);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    margin-left: 20px;
-    max-width: 1480px;
-    min-height: 100vh;
-    max-height: none;
-    flex: 1;
-  }
+  background-color: rgba(233, 230, 240, 0.821);
+  padding: 15px 40px; 
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin-left: 20px;
+  max-width: 1480px;
+  min-height: 100vh;
+  max-height: none;
+  flex: 1;
+  box-sizing: border-box;
+}
+
 
   .caixa h1 {
     text-align: left;
@@ -221,11 +223,11 @@ background-color: white;
 
 .projetos {
   width: 100%;
-  max-width: 100%; 
-  background-color: rgba(115, 100, 151, 0.521);
   padding: 20px;
   border-radius: 10px;
+  background-color: rgba(115, 100, 151, 0.521);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-sizing: border-box;
 }
 
 .projetos ul {
@@ -239,15 +241,14 @@ background-color: white;
 }
 
 .projetos li {
-  height: 150px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;;
 }
 
 .projetos img {
-  height: 100%;
-  max-height: 150px;
+  height: 150px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -261,7 +262,7 @@ background-color: white;
   font-weight: bold;
   display: block;
   padding: 10px 15px;
-  width: 100%;
+  width: 150px;
   text-decoration: none;
   color: white;
   background-color: rgb(44, 33, 51);
