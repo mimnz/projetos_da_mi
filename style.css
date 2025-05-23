@@ -237,15 +237,14 @@ background-color: white;
   margin: 0;
   display: flex;     
   flex-wrap: wrap;     
-  column-gap: 20px; 
-  row-gap: 40px; 
+  gap: 40px 20px; 
 }
 
 .projetos li {
   flex-direction: column;
   align-items: flex-start;
-  display: inline-flex;
-  width: auto;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .projetos img {
@@ -257,17 +256,16 @@ background-color: white;
 }
 
 .projetos a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
   display: block;
+  width: 100%;
   padding: 10px 15px;
   background-color: rgb(44, 33, 51);
   border-radius: 8px;
-  transition: background-color 0.4s ease, color 0.4s ease;
-  width: auto;
-  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
   text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .projetos a:hover {
