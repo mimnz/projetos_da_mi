@@ -234,7 +234,8 @@ background-color: white;
   margin: 0;
   display: flex;     
   flex-wrap: wrap;     
-  gap: 20px;       
+  column-gap: 20px; 
+  row-gap: 40px; 
 }
 
 .projetos li {
