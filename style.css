@@ -110,7 +110,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   width: 352px;
-  height: 100vh;
+  max-height: 1000px;
 }
 
 .menu ul {
@@ -211,3 +211,47 @@ background-color: white;
     border-radius: 200px;
     opacity: 65%;
   }
+
+.projetos {
+  background-color: rgba(115, 100, 151, 0.521);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 352px;
+  max-height: 100vh;
+}
+.projetos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projetos li {
+  margin-bottom: 5px;
+}
+
+.projetos img {
+  max-width: 300px;   
+  max-height: 200px;  
+  height: auto;
+  width: auto;
+}
+
+.projetos a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(44, 33, 51);
+  border-radius: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+.projetos a:hover {
+color: rgb(100, 9, 27);              
+background-color: white;     
+}
