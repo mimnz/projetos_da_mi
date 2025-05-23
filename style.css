@@ -199,7 +199,8 @@ background-color: white;
   input#player2:checked ~ .nav-buttons label:nth-child(3),
   input#player2:checked ~ .nav-buttons label:nth-child(4),
   input#player3:checked ~ .nav-buttons label:nth-child(5),
-  input#player3:checked ~ .nav-buttons label:nth-child(6),
+  input#player3:checked ~ .navtext-decoration: none;
+-buttons label:nth-child(6),
   input#player4:checked ~ .nav-buttons label:nth-child(7),
   input#player4:checked ~ .nav-buttons label:nth-child(8),
   input#player5:checked ~ .nav-buttons label:nth-child(9),
@@ -263,7 +264,8 @@ background-color: white;
   border-radius: 8px;
   color: white;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  text-decoration: none;
   box-sizing: border-box;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
