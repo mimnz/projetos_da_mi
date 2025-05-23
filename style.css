@@ -242,9 +242,10 @@ background-color: white;
 
 .projetos li {
   width: 150px;
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;;
+  align-items: flex-start;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .projetos img {
@@ -255,21 +256,19 @@ background-color: white;
   margin-bottom: 5px;
 }
 
-
 .projetos a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
   display: block;
   padding: 10px 15px;
-  width: 150px;
-  text-decoration: none;
-  color: white;
   background-color: rgb(44, 33, 51);
   border-radius: 8px;
   transition: background-color 0.4s ease, color 0.4s ease;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
-
 
 .projetos a:hover {
 color: rgb(100, 9, 27);              
