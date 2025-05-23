@@ -217,13 +217,14 @@ background-color: white;
   }
 
 .projetos {
+  width: 100%;
+  max-width: 100%; 
   background-color: rgba(115, 100, 151, 0.521);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 352px;
-  max-height: 100vh;
 }
+
 .projetos ul {
   list-style: none;
   padding: 0;
@@ -235,6 +236,7 @@ background-color: white;
 
 .projetos li {
   margin-bottom: 5px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,7 +258,7 @@ background-color: white;
   font-weight: bold;
   display: block;
   padding: 10px 15px;
-  width: 100px;
+  width: 100%;
   text-decoration: none;
   color: white;
   background-color: rgb(44, 33, 51);
