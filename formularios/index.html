@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Formulários</title>
+    <title>Formulário de Exemplo</title>
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_style.min.css" rel="stylesheet" type="text/css" />
-
-</head>
+    </head>
 <body>
-    <form action="" onsubmit="return processarFormulario(event)"> 
-    <h3>Cadastre-se</h3>
+    <form action="" onsubmit="return processarFormulario(event)"> <h3>Cadastre-se</h3>
 
         <div class="grupo-formulario">
             <label for="nomeUsuario">Nome:</label>
@@ -65,7 +61,7 @@
 
         <div class="grupo-formulario">
             <label for="areaComentarios">Comentários:</label><br>
-            <textarea id="areaComentarios" name="areaComentarios" rows="5"></textarea>
+            <textarea id="areaComentarios" name="areaComentarios" rows="5" placeholder="Digite seus comentários aqui..."></textarea>
             </div>
 
         <div class="grupo-formulario">
@@ -99,7 +95,6 @@
         <p id="mensagemFeedback" style="text-align: center; margin-top: 15px;"></p>
     </form>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
     <script src="processa_formulario.js"></script>
 </body>
 </html>
