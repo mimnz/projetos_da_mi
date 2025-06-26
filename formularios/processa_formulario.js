@@ -22,14 +22,6 @@ function exibirErro(elementoInput, elementoErro, mensagem) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    new FroalaEditor('#areaComentarios', {
-        toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', '|', 'align', 'formatOL', 'formatUL', '|', 'insertLink', 'undo', 'redo'],
-        heightMin: 150,
-        placeholderText: 'Digite seus comentários aqui...'
-    });
-});
-
 function processarFormulario(event) {
     event.preventDefault();
 
@@ -41,7 +33,7 @@ function processarFormulario(event) {
     const dataNascimento = document.getElementById('dataNascimento');
     const emailUsuario = document.getElementById('emailUsuario');
     const paisResidencia = document.getElementById('paisResidencia');
-    const comentariosFroala = new FroalaEditor('#areaComentarios').html.get();
+    const comentarios = document.getElementById('areaComentarios').value; 
     const telefoneContato = document.getElementById('telefoneContato');
     const curriculo = document.getElementById('curriculo');
     const urlPerfilUsuario = document.getElementById('urlPerfilUsuario');
@@ -147,7 +139,7 @@ function processarFormulario(event) {
             email: emailUsuario.value,
             habilidades: habilidadesSelecionadas.length > 0 ? habilidadesSelecionadas : 'Nenhuma selecionada',
             pais: paisResidencia.options[paisResidencia.selectedIndex].text,
-            comentarios: comentariosFroala,
+            comentarios: comentarios,
             telefone: telefoneContato.value,
             genero: generoSelecionado ? generoSelecionado.value : 'Não informado',
             curriculo: curriculo.files.length > 0 ? curriculo.files[0].name : 'Nenhum arquivo anexado',
